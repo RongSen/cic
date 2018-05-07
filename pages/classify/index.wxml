@@ -1,0 +1,37 @@
+<view class='container'>
+  <scroll-view class='nav_left' scroll-y='true' scroll-top='0'>
+    <block wx:for='{{navLeftItemList}}' wx:for-item="item" wx:key="id">
+      <view class='nav_left_items {{typeId == item.id ? "active" : ""}}' bindtap='switchRightTab' data-index='{{currentTypeId}}' data-id='{{item.id}}' data-name='{{item.name}}'> {{item.name}}</view>
+    </block>
+  </scroll-view>
+  <scroll-view class='nav_right' scroll-y='true'>
+    <view wx:if='{{navRightItemList.length>0}}'>
+      <block wx:for="{{navRightItemList}}" wx:for-index="typeIndex" wx:for-item="item" wx:key="type_id">
+        <view wx:if="{{typeId==item.typeId}}">
+          <block wx:for="{{navRightItemList[typeIndex].typeDetail}}" wx:for-index="typeDetailIndex" wx:for-item="typeDetail" wx:key="id">
+            <view class="nav_right_items">
+              <view bindtap="gotoGoodsList" data-typedetail="{{typeDetail}}">
+                <view>
+                  <block wx:if="{{typeDetail.logo}}">
+                    <image src="{{typeDetail.logo}}"></image>
+                  </block>
+                  <block wx:else>
+                    <image src="javascript:void(0);"></image>
+                  </block>
+                </view>
+                <view wx:if="{{typeDetail.name}}">
+                  <text>{{typeDetail.name}}</text>
+                </view>
+                <view wx:else>
+                  <text>{{typeDetail.desc}}</text>
+                </view>
+              </view>
+            </view>    
+          </block>    
+        </view>
+        <view wx:else>暂无数据</view>
+      </block>
+    </view>
+    <view wx:else>暂无数据</view>
+  </scroll-view>
+</view>

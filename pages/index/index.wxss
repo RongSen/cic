@@ -1,79 +1,123 @@
 .container {
-    background-color: #F2f2f2;
+  background-color: #f2f2f2;
+  font-size: 14px;
 }
 
-.swiper_box {
-    width: 100%;
+.list-item {
+  margin: 5px 0;
+  margin:10px 10px;
 }
 
-swiper-item image {
-    width: 100%;
-    display: inline-block;
-    overflow: hidden;
+.list-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-item-top .user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.list-item-top .user-logo {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-right:10px;
+  border-radius: 18px;
+}
+.list-item-top .cycle {
+  margin-right:5px;
+  background-color:#D4D4D4;
+  padding: 2px 8px;
+  border-radius: 18px;
+  opacity: 0.5;
 }
 
-view.text {
-    display: flex;
-    align-items: center;
-    position: relative;
-    padding: 10px 10px 10px 12px;
-    font-size: 15px;
-    color: #656565;
+.list-item-content {
+  margin: 10px auto 10px 10%;
+}
+.list-item-content .title {
+  font-weight: bold;
+}
+.list-item-content .description {
+  margin-bottom: 10px;
+}
+.list-item-content .description .spread {
+  margin-bottom: 10px;
+  color: #BBBBBB;
+}
+.list-item-content .picture-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-item-content .picture-list .picture {
+  display: block;
+  width:150px;
+  height: 150px;
+  margin: 2px 2px;
+}
+/*晒单对应商品的基本信息（logo、名称、价格以及跟随购买的人数）*/
+.list-item-content .goods-list {
+  margin-top: 10px;
+  background-color: rgba(211,211,211, 0.3);
+}
+.list-item-content .goods-list .goods-list-item {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 5px;
+  opacity: 1;
+}
+.list-item-content .goods-list .goods-list-item .goods-info {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 90%;
+
+}
+.list-item-content .goods-list .goods-list-item .goods-info .goods-info-base{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+}
+.list-item-content .goods-list .goods-list-item .goods-info .goods-info-base .follow-num{
+  color: red;
+}
+.list-item-content .goods-list .goods-list-item .goods-info .goods-info-base .goods-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+/*单条记录最末一行（点赞、评论等）*/
+.list-item-content .list-item-content-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #BBBBBB;
+  margin: 10px 5px 20px 5px;
+}
+.list-item-content .list-item-content-bottom .list-item-content-bottom-left {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.list-item-content .list-item-content-bottom .list-item-content-bottom-left .line {
+  margin: auto 5px;
 }
 
-view.text:before {
-    position: absolute;
-    display: block;
-    content: ' ';
-    left: -5px;
-    width: 2px;
-    height: 100%;
-    background-color: #09bb07;
+.list-item-content .list-item-content-bottom .list-item-content-bottom-right {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
-
-.line_flag {
-    width: 3px;
-    height: 100%;
-    height: 15px;
-    display: inline-block;
-    background-color: #f9f027;
+.list-item-content .list-item-content-bottom .list-item-content-bottom-right .likes{
+  margin-right: 15px;
 }
-
-view.text text {
-    margin-left: 10px;
-    line-height: 18px;
-    font-weight: bold;
-}
-
-.venues_box {
-    padding: 0 10rpx;
-}
-
-.venues_item {
-    display: inline-block;
-    width: 49%;
-    margin: 0 0.5%;
-}
-
-.venues_item image{
-    width: 100%;
-    height: 90px;
-}
-
-.choice_box {
-    padding: 0 10rpx;
-}
-.choice_box .choice_list .choice_item{
-    margin-bottom: 15px;
-}
-.choice_box .choice_list image {
-    width: 100%;
-    height: 200px;
-}
-
-.choice_box .choice_list .title {
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    color: #333;
+/*分割线*/
+.list-item .list-item-line {
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
 }

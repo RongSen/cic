@@ -1,45 +1,71 @@
-<!--index.wxml-->
-<view class='container'>
-  <view>
-    <swiper class='swiper_box' indicator-dots='{{indicatorDots}}' vertical='{{vertical}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' bindchange='swiperchange'>
-      <block wx:for='{{images}}'>
-        <swiper-item><image src='{{item.picurl}}'/></swiper-item>
-      </block>  
-    </swiper>
-  </view>
-
-  <view class='text'>
-    <view class='line_flag'></view>
-    <text>主题馆</text>
-  </view>
-
-  <view class='venues_box'>
-    <view class='venues_list'>
-      <block wx:for='{{venuesItems}}'>
-        <view class='venues_item'>
-          <navigator ur=''><image src='{{item.smallpic}}'/></navigator>
-        </view>
-      </block>
-    </view>
-  </view>
-
-  <view class="text">
-    <view class="line_flag"></view>
-    <text>环球精选</text>
-  </view>
-
-  <view class='choice_box'>
-    <view class="choice_list">
-      <block wx:for='{{choiceItems}}'>
-        <navigator url=''>
-          <view class='choice_item'>
-            <image src='{{item.goodspics}}'/>
-            <view class='title'>{{item.title}}</view>
+<view class="container">
+  <view class="list">
+    <block wx:for="{{initRecordSize}}">
+      <view class="list-item">
+        <view class="list-item-top">
+          <view class="user-info">
+            <image class="user-logo" src="../../images/user-logo.jpeg"></image>
+            <view class="user-name">齐源麻麻</view>
           </view>
-        </navigator>
-      </block>
-    </view>
+          <view class="cycle"><span class="fa fa-plus fa-sm"></span> 快乐童装</view>
+        </view>
+        <view class="list-item-content">
+          <view class="title">拼色ins T恤助攻型男潮流</view>
+          <view class="description">
+            <text class="summary">Regular,14pt，页面内次要描述信心服务于首要信息并与之关联，如列表摘要表摘要表摘要表摘要表摘要表摘要表摘要表摘要……</text>
+            <label class="spread">展开 <span class="fa fa-chevron-down fa-sm"></span></label>
+          </view>
+          <view class="picture-list">
+            <image class="picture" src="../../images/cycleMama/cycle-1.jpg"></image>
+            <image class="picture" src="../../images/cycleMama/cycle-2.jpg"></image>
+            <image class="picture" src="../../images/cycleMama/cycle-3.jpg"></image>
+          </view>
+          <view class="goods-list">
+            <block>
+              <view class="goods-list-item">
+                <view class="goods-info">
+                  <view class="goods-info-base">
+                    <image class="goods-logo" src="http://temp.im/50x50"></image>
+                    <view>
+                      <view class="goods-name">kinborx迪士尼 美女与野兽</view>
+                      <view class="goods-follow-purchase"><span class="follow-num">2</span>人跟随购买</view>
+                    </view>
+                  </view>
+                  <view class="goods-info-price"><span class="fa fa-cny fa-sm"></span> 299.00</view>
+                </view>
+                <view class="goods-more"><span class="fa fa-chevron-down fa-sm"></span></view>
+              </view>
+            </block>
+            <block>
+              <view class="goods-list-item">
+                <view class="goods-info">
+                  <view class="goods-info-base">
+                    <image class="goods-logo" src="http://temp.im/50x50"></image>
+                    <view>
+                      <view class="goods-name">kinborx迪士尼 美女与野兽</view>
+                      <view class="goods-follow-purchase"><span class="follow-num">2</span>人跟随购买</view>
+                    </view>
+                  </view>
+                  <view class="goods-info-price"><span class="fa fa-cny fa-sm"></span> 299.00</view>
+                </view>
+                <view class="goods-more"></view>
+              </view>
+            </block>
+          </view>          
+          <view class="list-item-content-bottom">
+            <view class="list-item-content-bottom-left">
+              <view class="option">晒单</view>
+              <view class="line">|</view>
+              <view class="readers">968人已阅读</view>
+            </view>
+            <view class="list-item-content-bottom-right">
+              <text class="fa fa-heart-o fa-sm likes"> 8</text>
+              <text class="fa fa-commenting-o fa-sm comment"> 评论</text>
+            </view>
+          </view>
+        </view>
+        <view class="list-item-line"></view>
+      </view>
+    </block>
   </view>
-
-  <loading hidden='{{loadingHidden}}'>加载中……</loading>
 </view>

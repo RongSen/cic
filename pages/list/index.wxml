@@ -1,0 +1,30 @@
+<view class='container'>
+  <navigator url='../detail/index?id={{item.id}}'>
+    <view class='brand_item'>
+      <image src='https://fakeimg.pl/100x100/' class='pic'></image>
+      <view class='right_cont'>
+        <text class='country'>美国直采 实时发货</text>
+        <text class='name'>舒适连体衣衣衣衣衣衣衣衣衣衣衣衣发发发发发发</text>
+        <view class='price'>
+          <text class='ourprice'>¥80.00</text>
+          <text class='discount'>8折</text>
+          <text class='marketprice'>¥100</text>
+        </view>
+      </view>
+    </view>
+  </navigator>
+  <navigator url='../detail/index?id={{item.id}}'>
+    <view class='brand_item'>
+      <image src='https://fakeimg.pl/100x100/' class='pic'></image>
+      <view class='right_cont'>
+        <text class='country'>美国直采 实时发货</text>
+        <text class='name'>舒适连体衣</text>
+        <view class='price'>
+          <text class='ourprice'>¥80.00</text>
+          <text class='discount'>8折</text>
+          <text class='marketprice'>¥100</text>
+        </view>
+      </view>
+    </view>
+  </navigator>
+</view>

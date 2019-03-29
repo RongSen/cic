@@ -1,0 +1,50 @@
+<view class="container">
+  <!-- 主要内容 -->
+  <view class="mainContent">
+    <!-- 顶部 -->
+    <view class="mainContent-top">
+      <view class="user-about">
+        <view>
+          <image class="user-logo" src="/images/user-logo.jpeg"></image>
+        </view>
+        <view class="user-info">
+          <view class="user-name">齐源麻麻</view>
+          <view class="user-visit-info">
+            <view class="user-visit-time">1小时前</view>
+            <text style="margin: auto 5px;">来自</text>
+            <view class="user-visit-circle">快乐童装</view>
+          </view>
+        </view>
+      </view>
+      <view class="btn-attention" bindtap="payAttention"><span class="fa fa-plus fa-sm"></span> 关注</view>
+    </view>
+    <!-- 内容 -->
+    <view class="mainContent-content">
+      <view class="title">拼色ins T恤助攻型男潮流</view>
+      <view class="description">Regular,14pt，页面内次要描述信心服务于首要信息并与之关联，如列表摘要表摘要表摘要表摘要表摘要表摘要表摘要表摘要……</view>
+      <view class="imageList">
+        <block>
+          <image class="article-image" src="/images/circleMama/circle-1.jpg"></image>
+          <image class="article-image" src="/images/circleMama/circle-1.jpg"></image>
+          <image class="article-image" src="/images/circleMama/circle-1.jpg"></image>
+          <image class="article-image" src="/images/circleMama/circle-1.jpg"></image>
+        </block>
+      </view>
+    </view>
+    <!-- 相关商品列表 -->
+    <view class="mainContent-goodsList">
+      <block>
+        <view class="goods-info">
+          <view class="goods-base">
+            <image class="goods-logo" src="http://temp.im/50x50"></image>
+            <view class="goods-name">kinborx迪士尼 美女与野兽</view>
+          </view>
+          <view class="goods-price"><span class="fa fa-cny fa-sm"></span> 99.00</view>
+        </view>
+      </block>
+    </view>
+    <!-- 点赞点人 -->
+    <!-- 评论 -->
+  </view>
+  <!-- 为你推荐 -->
+</view>

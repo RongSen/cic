@@ -1,11 +1,5 @@
-.container {
-  background-color: #f2f2f2;
-  font-size: 14px;
-}
-
 .list-item {
-  margin: 5px 0;
-  margin:10px 10px;
+  margin:10rpx 10rpx;
 }
 
 .list-item-top {
@@ -17,104 +11,108 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 5px;
+  margin-bottom: 5rpx;
 }
 .list-item-top .user-logo {
   display: block;
-  width: 30px;
-  height: 30px;
-  margin-right:10px;
-  border-radius: 18px;
+  width: 60rpx;
+  height: 60rpx;
+  margin-right:20rpx;
+  border-radius: 30rpx;
 }
-.list-item-top .cycle {
-  margin-right:5px;
+.list-item-top .circle {
+  margin-right:5rpx;
   background-color:#D4D4D4;
-  padding: 2px 8px;
-  border-radius: 18px;
+  padding: 2rpx 8rpx;
+  border-radius: 18rpx;
   opacity: 0.5;
 }
 
 .list-item-content {
-  margin: 10px auto 10px 10%;
+  margin: 10rpx auto 10rpx 80rpx;
 }
 .list-item-content .title {
   font-weight: bold;
 }
 .list-item-content .description {
-  margin-bottom: 10px;
+  margin-bottom: 10rpx;
 }
 .list-item-content .description .spread {
-  margin-bottom: 10px;
+  margin-bottom: 10rpx;
   color: #BBBBBB;
 }
 .list-item-content .picture-list {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
 }
 .list-item-content .picture-list .picture {
   display: block;
-  width:150px;
-  height: 150px;
-  margin: 2px 2px;
+  width:150rpx;
+  height: 150rpx;
+  margin: 2rpx 2rpx;
 }
 /*晒单对应商品的基本信息（logo、名称、价格以及跟随购买的人数）*/
-.list-item-content .goods-list {
-  margin-top: 10px;
+.goods-list {
+  margin-top: 10rpx;
   background-color: rgba(211,211,211, 0.3);
 }
-.list-item-content .goods-list .goods-list-item {
+.goods-list .goods-list-item {
   display: flex;
   align-content: center;
   justify-content: space-between;
-  padding: 5px;
+  padding: 5rpx;
   opacity: 1;
 }
-.list-item-content .goods-list .goods-list-item .goods-info {
+/* 隐藏多余的跟随购买记录 */
+.goods-list .goods-list-item-hidden {
+  display: none;
+}
+.goods-list .goods-list-item .goods-info {
   display: flex;
   align-content: center;
   justify-content: space-between;
   width: 90%;
 
 }
-.list-item-content .goods-list .goods-list-item .goods-info .goods-info-base{
+.goods-list .goods-list-item .goods-info .goods-info-base{
   display: flex;
   align-content: center;
   justify-content: space-between;
 
 }
-.list-item-content .goods-list .goods-list-item .goods-info .goods-info-base .follow-num{
+.goods-list .goods-list-item .goods-info .goods-info-base .follow-num{
   color: red;
 }
-.list-item-content .goods-list .goods-list-item .goods-info .goods-info-base .goods-logo {
+.goods-list .goods-list-item .goods-info .goods-info-base .goods-logo {
   width: 50px;
   height: 50px;
   margin-right: 10px;
 }
 /*单条记录最末一行（点赞、评论等）*/
-.list-item-content .list-item-content-bottom {
+.list-item-content-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #BBBBBB;
-  margin: 10px 5px 20px 5px;
+  margin: 10rpx 5rpx 20rpx 80rpx;
 }
-.list-item-content .list-item-content-bottom .list-item-content-bottom-left {
+.list-item-content-bottom .list-item-content-bottom-left {
   display: flex;
   align-content: center;
   justify-content: center;
 }
-.list-item-content .list-item-content-bottom .list-item-content-bottom-left .line {
-  margin: auto 5px;
+.list-item-content-bottom .list-item-content-bottom-left .line {
+  margin: auto 5rpx;
 }
 
-.list-item-content .list-item-content-bottom .list-item-content-bottom-right {
+.list-item-content-bottom .list-item-content-bottom-right {
   display: flex;
   align-content: center;
   justify-content: center;
 }
-.list-item-content .list-item-content-bottom .list-item-content-bottom-right .likes{
-  margin-right: 15px;
+.list-item-content-bottom .list-item-content-bottom-right .likes{
+  margin-right: 15rpx;
 }
 /*分割线*/
 .list-item .list-item-line {

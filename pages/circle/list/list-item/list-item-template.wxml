@@ -1,0 +1,83 @@
+<template name='listItem'>
+  <view class="list-item">
+    <!-- 用户信息 -->
+    <view class="list-item-top">
+      <view class="user-info">
+        <image class="user-logo" src="{{user.avatar}}"></image>
+        <view class="user-name">{{user.name}}</view>
+      </view>
+      <view class="circle"><span class="fa fa-plus fa-sm"></span> {{circleTypeName}}</view>
+    </view>
+    <!-- 中间内容区 -->
+    <view class="list-item-content">
+      <view class="title">{{title}}</view>
+      <view class="description">
+        <text class="summary">{{description}}</text>
+        <label class="spread">展开 <span class="fa fa-chevron-down fa-sm"></span></label>
+      </view>
+      <!-- 内容图片 -->
+      <view class="picture-list">
+        <block wx:for='{{contentImgList}}' wx:for-item='item'>
+          <image class="picture" src="{{item.url}}"></image>
+        </block>
+      </view>
+      <!-- 跟随购买 -->
+      <view class="goods-list">
+        <block wx:for='{{followerList}}' wx:for-item='item' wx:for-index='index'>
+          <view wx:if='{{index<1}}' class="goods-list-item">
+            <view class="goods-info">
+              <view class="goods-info-base">
+                <image class="goods-logo" src="{{item.goodsLogo}}"></image>
+                <view>
+                  <view class="goods-name">{{item.goodsName}}</view>
+                  <view class="goods-follow-purchase">
+                    <span class="follow-num">{{item.followerCount}}</span> 人跟随购买
+                  </view>
+                </view>
+              </view>
+              <view class="goods-info-price">
+                <span class="fa {{item.currency}} fa-sm"></span> {{item.price}}
+              </view>
+            </view>
+            <!-- 跟随购买 更多 -->
+            <view class="goods-more" wx:if='{{followerList.length>1}}' catchtap='loadGoodsMore'>
+              <span class="fa fa-chevron-down fa-sm"></span>
+            </view>
+          </view>
+          
+          <!-- 超过1个跟随购买时 -->
+          <view wx:if='{{index>=1}}' class="goods-list-item goods-list-item-hidden">
+            <view class="goods-info">
+              <view class="goods-info-base">
+                <image class="goods-logo" src="{{item.goodsLogo}}"></image>
+                <view>
+                  <view class="goods-name">{{item.goodsName}}</view>
+                  <view class="goods-follow-purchase">
+                    <span class="follow-num">{{item.followerCount}}</span> 人跟随购买
+                  </view>
+                </view>
+              </view>
+              <view class="goods-info-price">
+                <span class="fa {{item.currency}} fa-sm"></span> {{item.price}}
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <!-- 阅读数、评论数等 -->
+    <view class="list-item-content-bottom">
+      <view class="list-item-content-bottom-left">
+        <view class="articleCategory">{{categoryName}}</view>
+        <view class="line">|</view>
+        <view class="readers">{{reading}}</view> 人已阅读
+      </view>
+      <view class="list-item-content-bottom-right">
+        <text class="fa fa-heart-o fa-sm likes"> {{likes}}</text>
+        <text class="fa fa-commenting-o fa-sm comment"> {{comments}}</text>
+      </view>
+    </view>
+    <!-- 分割线 -->
+    <view class="list-item-line"></view>
+  </view>
+</template>

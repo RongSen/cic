@@ -1,0 +1,12 @@
+<view class='container'>
+  <view>
+    <swiper class='swiper_box' indicator-dots='' vertical='' autoplay='true' interval='3000' duration='500'>
+      <swiper-item><image class='slide_image' src="https://fakeimg.pl/375x190/" /></swiper-item>
+      <swiper-item><image class='slide_image' src="https://fakeimg.pl/375x190/" /></swiper-item>
+    </swiper>
+  </view>
+  <view class='shopping_container'>
+    <view class='title'>舒适连体衣</view>
+    <view class='reason'>舒适连体衣服，婴儿使用</view>
+  </view>
+</view>

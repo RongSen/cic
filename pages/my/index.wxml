@@ -1,0 +1,16 @@
+<view class='container'>
+  <view class='userinfo' bindtap='bindViewTap'>
+    <image class='userinfo-avatar' src='https://fakeimg.pl/100x100/' background-size='cover'></image>
+    <text class='userinfo-nickname'>晓田</text>
+  </view>
+  <view class='info_list'>
+    <view class='weui_cell'>
+      <view class='weui_cell_hd'><image src='https://fakeimg.pl/100x100/'></image></view>
+      <view class='weui_cell_bd'>
+        <view class='weui_cell_bd_p'>item.text</view>
+      </view>
+      <view wx:if='{{true}}' class='badge'>unreadNum</view>
+      <view class='with_arrow'></view>
+    </view>
+  </view>
+</view>

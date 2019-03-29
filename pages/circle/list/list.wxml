@@ -1,0 +1,9 @@
+<import src='list-item/list-item-template.wxml' />
+
+<view>
+  <block wx:for="{{circleRecordList}}" wx:for-item='item'>
+    <view catchtap='onListItemTap' data-list-id='{{item.id}}'>
+      <template is='listItem' data='{{...item}}' />
+    </view>
+  </block>
+</view>

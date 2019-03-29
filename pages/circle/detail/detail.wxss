@@ -1,0 +1,85 @@
+/* pages/circle/detail/index.wxss */
+.container {
+  font-size: 14px;
+  padding: 15px;
+}
+
+.mainContent {
+
+}
+
+.mainContent .mainContent-top {
+  display:  flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.mainContent .mainContent-top .user-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainContent .mainContent-top .user-about .user-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+.mainContent .mainContent-top .user-about .user-info {
+  
+}
+.mainContent .mainContent-top .user-about .user-info .user-visit-info {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.mainContent .mainContent-top .user-about .user-info .user-visit-info .user-visit-time {
+  color: #BBBBBB;
+}
+.mainContent .mainContent-top .user-about .user-info .user-visit-info .user-visit-circle {
+  color: red;
+}
+.mainContent .mainContent-top .btn-attention {
+  border: 1px solid red;
+  border-radius: 15px;
+  margin-right: 5px;
+  padding: 1px 15px;
+  color: red;
+}
+
+/* 内容 */
+.mainContent .mainContent-content {
+  margin: 10px auto;
+}
+.mainContent .mainContent-content .title {
+  color: red;
+}
+.mainContent .mainContent-content .description {
+
+}
+.mainContent .mainContent-content .imageList {
+  align-content: center;
+}
+.mainContent .mainContent-content .imageList .article-image {
+  width: 100%;
+  margin-top: 5px;
+}
+.mainContent .mainContent-goodsList {
+  
+}
+.mainContent .mainContent-goodsList .goods-info .goods-base .goods-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+.mainContent .mainContent-goodsList .goods-info {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.mainContent .mainContent-goodsList .goods-base {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}

@@ -12,7 +12,7 @@
       <image class='check_img' hidden='{{item.check}}' src='../../images/check_icon_false.png'></image>
       <image class='check_img' hidden='{{!item.check}}' src='../../images/check_icon_true.png'></image>
     </view>
-    <image class='shop_img' src='../../image/user-logo.jpeg' mode='aspectFill' catchtap='navshopdetailTap'>
+    <image class='shop_img' src='../../images/user-logo.jpeg' mode='aspectFill' catchtap='navshopdetailTap'>
     </image>
     <view class='shop_detail' catchtap='navshopdetailTap'>
       <text class='shop_name'>{{item.name}}</text>
@@ -35,6 +35,6 @@
 <view class='footer'>
   <text class='footer_total_text' hidden='{{adminShow}}'>合计：<text class='footer_total_price'>￥{{total}}</text></text>
   <text class='footer_total' hidden='{{adminShow}}' catchtap='goclearingTap'>结算</text>
-  <text class='deleteshop' catchtap='deleteshopTap' hidden='{{!adminShow}}'>移除商品</text>
-  <text class='deleteshop' catchtap='addcollectTap' hidden='{{!adminShow}}'>加入收藏夹</text>
+  <text class='add_to_collect' catchtap='addcollectTap' hidden='{{!adminShow}}'>移至收藏</text>
+  <text class='delete_shop' catchtap='deleteshopTap' hidden='{{!adminShow}}'>删除</text>
 </view>

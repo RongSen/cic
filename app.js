@@ -1,6 +1,6 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function() {
     console.log('App Launch');
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -34,28 +34,28 @@ App({
     //   }
     // })
   },
-  getUserInfo: function(cb){
+  getUserInfo: function(cb) {
     var that = this
-    if(this.globalData.userInfo){
+    if (this.globalData.userInfo) {
       typeof cb == "function" && cb(this.globalData.userInfo)
-    }else{
+    } else {
       wx.login({
-        success: function(res){
+        success: function(res) {
           that.globalData.userInfo = res.userInfo
           typeof cb == "function" && cb(that.globalData.userInfo)
         }
       })
     }
   },
-  onShow: function(){
+  onShow: function() {
     console.log('App Show')
   },
-  onHide: function(){
+  onHide: function() {
     console.log('App Hide')
   },
   globalData: {
     userInfo: null,
-    shopcarData: [{//购物车   
+    shopcarData: [{ //购物车   
       id: '1',
       name: '折后i啊手动阀就是点击发送的金佛啊是是假的佛山折后i啊手动阀就是点击发送的金佛啊是是假的佛山',
       price: '230',
@@ -81,6 +81,20 @@ App({
       price: '320',
       num: 1,
       types: '黑色/37码',
+      check: true
+    }, {
+      id: '5',
+      name: '阿桑的歌微软噶士大夫啊士大夫但是飞洒地方士大夫撒',
+      price: '630',
+      num: 1,
+      types: '白色/39码',
+      check: true
+    }, {
+      id: '5',
+      name: '阿桑的歌微软噶士大夫啊士大夫但是飞洒地方士大夫撒',
+      price: '630',
+      num: 1,
+      types: '白色/39码',
       check: true
     }, {
       id: '5',

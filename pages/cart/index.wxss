@@ -65,7 +65,8 @@ page{
   -webkit-line-clamp:2;  
   -webkit-box-orient:vertical;  
   overflow:hidden;
-}.shop_type{
+}
+.shop_type{
   display: block;  
   font-size: 26rpx;  
   color: #ccc;  
@@ -92,4 +93,48 @@ page{
 .add_icon,.minus_icon{
   width: 38rpx;  
   height: 38rpx;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 120rpx;
+  background: white;
+  border: 1px solid #efefef;
+}
+.footer text{
+  line-height: 120rpx;
+  text-align: center;
+}
+.footer_total_text {
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+.footer_total_price{
+  color: rgba(245, 75, 75, 0.945);
+}
+.footer_total{
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  background: rgba(245, 75, 75, 0.945);
+  width: 150rpx;
+}
+.delete_shop,.add_to_collect{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 80rpx !important;
+  height: 80rpx !important;
+  width: 150rpx;
+  border-radius: 10rpx;
+  margin: auto 10rpx;
+}
+.add_to_collect{
+  color: rgb(148, 148, 148);
+  background: white;
+  border: 1px solid rgb(148, 148, 148);
+}
+.delete_shop{
+  color: white;
+  background: rgba(245, 75, 75, 0.945);
 }

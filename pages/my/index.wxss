@@ -10,10 +10,11 @@ page {
 
 .userinfo {
   display: flex;
-  flex-direction: column;
-  padding: 50rpx 0;
-  align-items: center;
-  background: #f9f027;
+  flex-direction: row;
+  padding: 50rpx 50rpx;
+  align-items: flex-start;
+  background-image: linear-gradient(160deg, #f89d2e 20%,#ffce00 80%);
+  border-radius: 5%;
 }
 
 .userinfo-avatar {

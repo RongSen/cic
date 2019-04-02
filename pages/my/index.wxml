@@ -1,17 +1,73 @@
 <view class='container'>
-  <view class='userinfo' bindtap='bindViewTap'>
-    <image class='userinfo-avatar' src='https://fakeimg.pl/100x100/' background-size='cover'></image>
-    <text class='userinfo-nickname'>晓田</text>
-  </view>
-  <view class='info_list'>
-    <view class='weui_cell'>
-      <view class='weui_cell_hd'><image src='https://fakeimg.pl/100x100/'></image></view>
-      <view class='weui_cell_bd'>
-        <view class='weui_cell_bd_p'>item.text</view>
+  <view class='container_items'>
+    <view class='userinfo' bindtap='bindViewTap'>
+      <image class='userinfo_avatar' src='https://fakeimg.pl/50x50/' background-size='cover'></image>
+      <view class='userinfo_account'>
+        <view class='userinfo_account_nickname'>
+          <text class='userinfo_nickname'>CheungGQ</text>
+          <image class='userinfo_nickname_edit' src='https://fakeimg.pl/20x20/'></image>
+          <image class='userinfo_level' src='https://fakeimg.pl/30x20/'></image>
+        </view>
+        <view class='userinfo_account_username'>用户名：cic_123456789</view>
+        <view class='userinfo_account_other'>宝妈积分</view>
       </view>
-      <view wx:if='{{true}}' class='badge'>unreadNum</view>
-      <view class='with_arrow'></view>
     </view>
   </view>
-  
+  <!-- 头条 -->
+  <view class='container_items'>
+    <swiper class='headline' autoplay='true' interval='3000' vertical='true' circular='true'>
+      <swiper-item class='headline_items'>
+        <image class='headline_items_img' src='https://fakeimg.pl/100x100/'></image>
+        <view class='headline_items_info'>
+          <view class='headline_items_info_title'>
+            <text class='title_1'>头条</text>
+            <text class='title_2'>关注你的生活点滴</text>
+          </view>
+          <view class='headline_items_info_desc'>
+            <text class='headline_type'>清单</text>
+            <text class='headline_title'>熬夜修仙也不怕</text>
+          </view>
+        </view>
+        <view class='headline_items_detail'>></view>
+      </swiper-item>
+      <swiper-item class='headline_items'>
+        <image class='headline_items_img' src='https://fakeimg.pl/100x100/'></image>
+        <view class='headline_items_info'>
+          <view class='headline_items_info_title'>
+            <text class='title_1'>头条</text>
+            <text class='title_2'>关注你的生活点滴</text>
+          </view>
+          <view class='headline_items_info_desc'>
+            <text class='headline_type'>清单</text>
+            <text class='headline_title'>熬夜修仙也不怕</text>
+          </view>
+        </view>
+        <view class='headline_items_detail'>></view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class='container_items'>
+    <view class='order_info'>
+      <view class='order_info_items order_payment'>
+        <image class='order_info_items_img' src='https://fakeimg.pl/50x50/'></image>
+        <text>待付款</text>
+      </view>
+      <view class='order_info_items order_receipt'>
+        <image class='order_info_items_img' src='https://fakeimg.pl/50x50/'></image>
+        <text>待收货</text>
+      </view>
+      <view class='order_info_items order_comment'>
+        <image class='order_info_items_img' src='https://fakeimg.pl/50x50/'></image>
+        <text>待评价</text>
+      </view>
+      <view class='order_info_items order_aftersale'>
+        <image class='order_info_items_img' src='https://fakeimg.pl/50x50/'></image>
+        <text>退换/售后</text>
+      </view>
+      <view class='order_info_items order_all'>
+        <image class='order_info_items_img' src='https://fakeimg.pl/50x50/'></image>
+        <text>全部订单</text>
+      </view>
+    </view>
+  </view>
 </view>

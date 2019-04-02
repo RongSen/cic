@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/my/index",
     "pages/classify/index",
     "pages/circle/list/list",
     "pages/circle/detail/detail",
     "pages/logs/logs",
     "pages/list/index",
     "pages/detail/index",
-    "pages/my/index",
     "pages/cart/index"
   ],
   "window": {

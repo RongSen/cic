@@ -1,59 +1,60 @@
 /* pages/my/index.wxss */
 page {
-  background: #fff;
+  background: #eeeeee;
   font-size: 14px;
+  color: #666666
 }
 
 .container {
   background-color: #f2f2f2;
 }
 .container_items{
-  width: 100%;
-  height: 200rpx;
   background: #fff;
+  padding: 10rpx;
+  margin-bottom: 15rpx;
 }
+/* 用户信息 */
 .userinfo {
   display: flex;
   flex-direction: row;
   align-items: center;
   background-image: linear-gradient(160deg, #f89d2e 20%,#ffce00 80%);
   border-radius: 10rpx;
-  margin: 10rpx;
   color: #fff;
 }
-.userinfo_avatar {
+.userinfo .avatar {
   width: 128rpx;
   height: 128rpx;
   margin: 20rpx;
   border-radius: 50%;
 }
-.userinfo_account{
+.userinfo .account{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  height: 100%;
 }
-.userinfo_account_nickname{
+.userinfo .account .account_nickname{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
 }
-.userinfo_nickname_edit{
+.userinfo .account .nickname_edit{
   width: 30rpx;
   height: 30rpx;
   margin: auto 10rpx;
 }
-.userinfo_level{
+.userinfo .account .level{
   width: 50rpx;
   height: 30rpx;
 }
-.userinfo_account_nickname {
+.userinfo .account .nickname {
 }
-.userinfo_account_username{
+.userinfo .account .username{
   margin: 10rpx auto;
+  font-size: 12px;
 }
-.userinfo_account_other{
+.userinfo .account .points{
   background: rgba(80, 78, 80, 0.2);
   border-radius: 30rpx;
   padding: 5rpx 15rpx;
@@ -62,7 +63,6 @@ page {
 
 /* 头条 */
 .headline{
-  width: 100%;
   height: 100rpx;
 }
 .headline_items{
@@ -107,7 +107,6 @@ page {
 }
 .headline_items_info_desc .headline_title{
   margin-left: 10rpx;
-  color: rgb(70, 70, 70);
   font-size: 12px;
 }
 .headline_items .headline_items_detail{
@@ -119,6 +118,7 @@ page {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 20rpx auto;
 }
 .order_info_items{
   display: flex;
@@ -129,4 +129,54 @@ page {
   width: 50rpx;
   height: 50rpx;
   margin-bottom: 10rpx;
+}
+.order_info_items text{
+  font-size: 12px;
+}
+
+/* 我的资产 */
+.asset_info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20rpx auto;
+}
+.asset_info .asset_info_items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.asset_info .asset_info_items .amount_unit{
+  color: red;
+  margin-bottom: 20rpx;
+  width: auto;
+  height: 50rpx;
+}
+.asset_info .asset_info_items .amount{
+  font-size: 14px;
+}
+.asset_info .asset_info_items .unit{
+  font-size: 10px;
+}
+.asset_info .asset_info_items .amount_unit_desc{
+  font-size: 12px;
+}
+
+/* 我的收藏 */
+.collect_info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20rpx auto;
+}
+.collect_info .collect_info_items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.collect_info .collect_info_items .collect_num{
+  margin-bottom: 10rpx;
+}
+.collect_info .collect_info_items .collect_name{
+  font-size: 12px;
 }

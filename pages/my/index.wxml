@@ -1,15 +1,15 @@
 <view class='container'>
   <view class='container_items'>
     <view class='userinfo' bindtap='bindViewTap'>
-      <image class='userinfo_avatar' src='https://fakeimg.pl/50x50/' background-size='cover'></image>
-      <view class='userinfo_account'>
-        <view class='userinfo_account_nickname'>
-          <text class='userinfo_nickname'>CheungGQ</text>
-          <image class='userinfo_nickname_edit' src='https://fakeimg.pl/20x20/'></image>
-          <image class='userinfo_level' src='https://fakeimg.pl/30x20/'></image>
+      <image class='avatar' src='https://fakeimg.pl/50x50/' background-size='cover'></image>
+      <view class='account'>
+        <view class='account_nickname'>
+          <text class='nickname'>CheungGQ</text>
+          <image class='nickname_edit' src='https://fakeimg.pl/20x20/'></image>
+          <image class='level' src='https://fakeimg.pl/30x20/'></image>
         </view>
-        <view class='userinfo_account_username'>用户名：cic_123456789</view>
-        <view class='userinfo_account_other'>宝妈积分</view>
+        <view class='username'>用户名：cic_123456789</view>
+        <view class='points'>宝妈积分</view>
       </view>
     </view>
   </view>
@@ -67,6 +67,64 @@
       <view class='order_info_items order_all'>
         <image class='order_info_items_img' src='https://fakeimg.pl/50x50/'></image>
         <text>全部订单</text>
+      </view>
+    </view>
+  </view>
+  <view class='container_items'>
+    <view class='asset_info'>
+      <view class='coupon asset_info_items'>
+        <view class='amount_unit'>
+          <text class='amount'>5</text>
+          <text class='unit'>张</text>
+        </view>
+        <text class='amount_unit_desc'>宝券</text>
+      </view>
+      <view class='account_balance asset_info_items'>
+        <view class='amount_unit'>
+          <text class='amount'>0</text>
+          <text class='unit'>元</text>
+        </view>
+        <text class='amount_unit_desc'>账户余额</text>
+      </view>
+      <view class='virtual_currency asset_info_items'>
+        <view class='amount_unit'>
+          <text class='amount'>465</text>
+          <text class='unit'>个</text>
+        </view>
+        <text class='amount_unit_desc'>宝豆</text>
+      </view>
+      <view class='gift_card asset_info_items'>
+        <view class='amount_unit'>
+          <text class='amount'>5</text>
+          <text class='unit'>张</text>
+        </view>
+        <text class='amount_unit_desc'>礼品卡</text>
+      </view>
+      <view class='my_asset asset_info_items'>
+        <view class='amount_unit'>
+          <image style='width:50rpx;height:50rpx;' src='https://fakeimg.pl/50x50/'></image>
+        </view>
+        <text class='amount_unit_desc'>我的资产</text>
+      </view>
+    </view>
+  </view>
+  <view class='container_items'>
+    <view class='collect_info'>
+      <view class='collect_info_items'>
+        <text class='collect_num'>1</text>
+        <text class='collect_name'>商品收藏</text>
+      </view>
+      <view class='collect_info_items'>
+        <text class='collect_num'>181</text>
+        <text class='collect_name'>店铺收藏</text>
+      </view>
+      <view class='collect_info_items'>
+        <text class='collect_num'>100</text>
+        <text class='collect_name'>搭配收藏</text>
+      </view>
+      <view class='collect_info_items'>
+        <text class='collect_num'>6</text>
+        <text class='collect_name'>我的足迹</text>
       </view>
     </view>
   </view>
